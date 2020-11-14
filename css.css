@@ -17,7 +17,7 @@ h1{
 }
 button{
     margin: 2px;
-    background-color: #33334d;
+    background-color: #33334d !important;
     box-shadow: 2px 2px 2px #5c5c8a;
 }
 .header-MMC{
@@ -32,14 +32,33 @@ button{
     opacity: 0.9;
     padding: 2%;
 }
+#skills{
+    padding: 2px;
+    background-color: #33334d;
+    color: white;
+}
+
+/* Animation */
 @keyframes show-list{
     0% { opacity: 0;}
-    25% { opacity: 0.25;}
-    75% { opacity: 0.75;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
     100% { opacity: 1.0;}
 }
-#hide-at-first{
+@keyframes hide-list{
+    0% {opacity: 1.0;}
+    25% {opacity: 0.75;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.25;}
+    100% {opacity: 0; display: none;}
+}
+.main-list{
     display: none;
     animation-name: show-list;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
+}
+.fade{
+    animation-name: hide-list;
+    animation-duration: 0.5s;
 }
