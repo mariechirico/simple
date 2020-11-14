@@ -9,5 +9,5 @@ function reset(){
     var myList = document.getElementById("main-list");
     myList.className = "fade";
 
-    setTimeout(()=> {myList.style.display = "none";}, 500);
+    setTimeout(()=> {myList.style.display = "none";}, 500); 
 }
