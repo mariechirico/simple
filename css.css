@@ -51,7 +51,7 @@ button{
     25% {opacity: 0.75;}
     50% {opacity: 0.5;}
     75% {opacity: 0.25;}
-    100% {opacity: 0; display: none;}
+    100% {opacity: 0;}
 }
 .main-list{
     display: none;
