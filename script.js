@@ -7,7 +7,7 @@ function showList(){
 }
 function reset(){
     var myList = document.getElementById("main-list");
-    myList.className = "fade";
+    myList.className = "fade"; 
 
     setTimeout(()=> {myList.style.display = "none";}, 500); 
 }
