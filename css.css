@@ -4,6 +4,8 @@ body{
     background-image: url("https://i.imgur.com/hmRwyH3.jpg");
     font-family: 'Raleway', sans-serif;
 }
+
+/*Header*/
 .head-image{ 
     height: auto;
     width: 45%;
@@ -23,20 +25,32 @@ button{
 .header-MMC{
     background: rgba(238, 238, 238, 0.9);
     padding: 2%;
+    border-radius: 5px;
 }
 .social-buttons{
     margin-bottom: 1%;
 }
-.center-info{
-    background-color: #eee;
-    opacity: 0.9;
-    padding: 2%;
+.ahref a:hover{
+    text-decoration-line: none;
+    text-decoration: none;
 }
-#skills{
+
+/*Menus*/
+.center-info{
+    border-radius: 5px;
+    padding-top: 2%;
+    transition-property: display;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+#skills, #school{
     padding: 2px;
     background-color: #33334d;
-    color: white;
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9494b8;
 }
+
 
 /* Animation */
 @keyframes show-list{
@@ -54,11 +68,17 @@ button{
     100% {opacity: 0;}
 }
 .main-list{
-    display: none;
+    display: none; 
+    background: rgba(238, 238, 238, 0.9);
+    margin-top: -10px;
+    padding-bottom: 2%;
     animation-name: show-list;
     animation-duration: 0.5s;
 }
 .fade{
+    background: rgba(238, 238, 238, 0.9);
+    margin-top: -10px;
+    padding-bottom: 2%;
     animation-name: hide-list;
     animation-duration: 0.5s;
 }
