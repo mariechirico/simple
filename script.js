@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './css.css';
+
 function showList(id){
     var arrow = id + '-arrow';
     var myList = document.getElementById(id);
