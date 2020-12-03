@@ -12,6 +12,7 @@ body{
     display: block;
     float: right;
     box-shadow: 2px 2px 2px #9494b8;
+    border-radius: 5px;
 }
 h1{
     text-shadow: 2px 2px 2px #9494b8; 
@@ -21,6 +22,9 @@ button{
     margin: 2px;
     background-color: #33334d !important;
     box-shadow: 2px 2px 2px #5c5c8a;
+}
+button:hover{
+    opacity: 0.7;
 }
 .header-MMC{
     background: rgba(238, 238, 238, 0.9);
@@ -39,7 +43,7 @@ button{
 .center-info{
     border-radius: 5px;
     padding-top: 2%;
-    transition-property: display;
+    transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
@@ -50,7 +54,9 @@ button{
     border-radius: 5px;
     box-shadow: 2px 2px 2px #9494b8;
 }
-
+.displayBlock{
+    display: block;
+}
 
 /* Animation */
 @keyframes show-list{
@@ -68,12 +74,14 @@ button{
     100% {opacity: 0;}
 }
 .main-list{
-    display: none; 
     background: rgba(238, 238, 238, 0.9);
     margin-top: -10px;
     padding-bottom: 2%;
     animation-name: show-list;
     animation-duration: 0.5s;
+}
+.pre-fade{
+    opacity: 0;
 }
 .fade{
     background: rgba(238, 238, 238, 0.9);
@@ -82,3 +90,53 @@ button{
     animation-name: hide-list;
     animation-duration: 0.5s;
 }
+
+/* Thumbnails */
+.thumbnails {
+    position: relative;
+    display: block;
+}
+.thumbnails ul{
+    list-style-type: none;
+    float: left;
+
+}
+.thumbnails li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.thumbnails img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9494b8;
+    position: absolute;
+    margin-bottom: 20px;
+}
+.thumbnails img:hover{
+    opacity: 0;
+}
+.overlay {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #9494b8;
+  }  
+  .thumbnails .overlay:hover{
+    opacity: 0.8;
+  }  
+  .text {
+    color: white;
+    background-color: #9494b8;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
