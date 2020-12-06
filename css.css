@@ -3,16 +3,19 @@
 body{
     background-image: url("https://i.imgur.com/hmRwyH3.jpg");
     background-attachment: fixed;
-    font-family: 'Courgette', cursive;
+
 }
 .wholebackground{
     background: rgba(238, 238, 238, 0.75);
+}
+main{
+    font-family: 'Courgette', cursive;
 }
 
 /*Header*/
 .head-image{ 
     height: auto;
-    width: 75%;
+    width: 65%;
     display: block;
     float: right;
     margin-top: 25%;
@@ -23,6 +26,7 @@ body{
 h1{
     text-shadow: 2px 2px 2px #9494b8; 
     color: #33334d;
+    font-size: 2.5em !important;
 }
 button{
     margin: 2px;
@@ -45,7 +49,7 @@ button:hover{
     text-decoration: none;
 }
 .header-text{
-    margin-top: 25%;
+    margin-top: 20%;
     background-size: cover;
 }
 
@@ -87,7 +91,7 @@ button:hover{
     100% {opacity: 0;}
 }
 .main-list{
-    margin-top: -10px;
+    margin-top: -5px;
     padding-bottom: 2%;
     animation-name: show-list;
     animation-duration: 0.5s;
@@ -96,7 +100,7 @@ button:hover{
     opacity: 0;
 }
 .fade{
-    margin-top: -10px;
+    margin-top: -5px;
     padding-bottom: 2%;
     animation-name: hide-list;
     animation-duration: 0.5s;
