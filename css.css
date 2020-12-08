@@ -182,3 +182,41 @@ button:hover{
       bottom: 0;
       opacity: 0.5;
   }
+
+ @media (max-width: 780px){
+    #topbutton img{
+        width: 0.5%;
+    }
+    .head-image{
+        display: none;
+    }
+    .header-MMC{
+        height: 50%;
+    }
+    h1{
+        display: block;
+    }
+    .social-buttons{
+        display: block;
+    }
+    .header-text{
+        display: block;
+    }
+    .main-list, .fade .pre-fade{
+        display: block;
+        opacity: 1;
+        margin-top: 1%;
+    }
+    #skills, #school{
+        display: block;
+        z-index: 2;
+        opacity: 1;
+    }
+    .thumbnails ul{
+        float: none;
+    }
+    .thumbnails li{
+        display: block;
+    }
+
+ }
