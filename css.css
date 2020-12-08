@@ -192,31 +192,53 @@ button:hover{
     }
     .header-MMC{
         height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     h1{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .social-buttons{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .header-text{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .main-list, .fade .pre-fade{
-        display: block;
+        display: flex;
         opacity: 1;
         margin-top: 1%;
+        flex-direction: column;
+        height: 50%;
     }
     #skills, #school{
         display: block;
-        z-index: 2;
-        opacity: 1;
     }
     .thumbnails ul{
         float: none;
+        display: inline-block;
     }
     .thumbnails li{
-        display: block;
+        display: inline-block;
     }
-
+    .thumbnails img{
+        width: 200px;
+        height: 200px;
+    }
+    .overlay{
+        width: 200px;
+        height: 200px;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
  }
